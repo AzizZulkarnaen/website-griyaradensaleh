@@ -70,7 +70,7 @@
                     <div class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center text-white text-lg font-bold">RS</div>
                     <div>
                         <h1 class="font-extrabold text-sm tracking-wider">RADEN SALEH</h1>
-                        <span class="text-xs text-primary font-semibold">Premium Admin</span>
+                        <span class="text-xs text-primary font-semibold">Premium Owner</span>
                     </div>
                 `;
             } else if (type === 'loader') {
@@ -127,7 +127,7 @@
         <div class="bg-white rounded-3xl w-full max-w-sm shadow-2xl overflow-hidden flex flex-col fade-in">
             <div class="p-6 bg-slate-900 text-white flex justify-between items-center">
                 <div>
-                    <h3 class="font-bold text-base">Portal Admin</h3>
+                    <h3 class="font-bold text-base">Portal Owner</h3>
                     <p class="text-[11px] text-slate-400 mt-0.5">Silakan masuk untuk melanjutkan</p>
                 </div>
                 <button onclick="closeAdminLogin()" class="text-slate-400 hover:text-white transition-all">
@@ -137,11 +137,11 @@
             <form onsubmit="handleAdminLogin(event)" class="p-6 space-y-4">
                 <div>
                     <label class="block text-xs font-bold text-slate-700 mb-1.5">Username</label>
-                    <input type="text" id="admin-user" placeholder="Ketik: admin" class="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all" required>
+                    <input type="text" id="admin-user" placeholder="Ketik: owner" class="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all" required>
                 </div>
                 <div>
                     <label class="block text-xs font-bold text-slate-700 mb-1.5">Password</label>
-                    <input type="password" id="admin-pass" placeholder="Ketik: admin123" class="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all" required>
+                    <input type="password" id="admin-pass" placeholder="Ketik: owner123" class="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all" required>
                 </div>
                 <button type="submit" class="w-full py-3 bg-primary hover:bg-primary-dark text-white font-bold rounded-xl text-xs transition-all mt-2 animate-pulse">
                     Masuk Dashboard
@@ -234,7 +234,7 @@
                         Booking <i class="fa-solid fa-calendar-days ml-1"></i>
                     </a>
                     
-                    <button onclick="requestAdminAccess()" class="w-9 h-9 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-xl flex items-center justify-center transition-all" title="Portal Admin">
+                    <button onclick="requestAdminAccess()" class="w-9 h-9 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-xl flex items-center justify-center transition-all" title="Portal Owner">
                         <i class="fa-solid fa-user-gear text-sm"></i>
                     </button>
                 </div>
@@ -283,31 +283,31 @@
 
                     <div class="grid grid-cols-2 md:grid-cols-4 gap-4 auto-rows-[200px]">
                         <div class="col-span-2 row-span-2 rounded-3xl overflow-hidden relative group">
-                            <img src="WhatsApp Image 2026-05-21 at 18.00.36.jpeg" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Interior Kamar Utama">
+                            <img src="WhatsApp Image 2026-05-21 at 18.00.36.jpeg" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Interior Kamar Utama" onerror="this.src='https://placehold.co/600x400/eeeeee/999999?text=Image'">
                             <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                                 <span class="text-white font-bold text-lg">Interior Kamar Utama</span>
                             </div>
                         </div>
                         <div class="rounded-3xl overflow-hidden relative group">
-                            <img src="WhatsApp Image 2026-05-21 at 18.00.36 (2).jpeg" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Kamar Mandi Dalam">
+                            <img src="WhatsApp Image 2026-05-21 at 18.00.36 (2).jpeg" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Kamar Mandi Dalam" onerror="this.src='https://placehold.co/400x300/eeeeee/999999?text=Image'">
                             <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                                 <span class="text-white font-bold text-sm text-center px-2">Kamar Mandi Dalam</span>
                             </div>
                         </div>
                         <div class="rounded-3xl overflow-hidden relative group">
-                            <img src="WhatsApp Image 2026-05-21 at 18.00.42 (3).jpeg" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Tampak Luar Kos">
+                            <img src="WhatsApp Image 2026-05-21 at 18.00.42 (3).jpeg" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Tampak Luar Kos" onerror="this.src='https://placehold.co/400x300/eeeeee/999999?text=Image'">
                             <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                                 <span class="text-white font-bold text-sm text-center px-2">Tampak Luar Kos</span>
                             </div>
                         </div>
                         <div class="rounded-3xl overflow-hidden relative group">
-                            <img src="WhatsApp Image 2026-05-21 at 18.00.37 (2).jpeg" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Laundry">
+                            <img src="WhatsApp Image 2026-05-21 at 18.00.37 (2).jpeg" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Laundry" onerror="this.src='https://placehold.co/400x300/eeeeee/999999?text=Image'">
                             <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                                 <span class="text-white font-bold text-sm text-center px-2">Laundry</span>
                             </div>
                         </div>
                         <div class="rounded-3xl overflow-hidden relative group">
-                            <img src="WhatsApp Image 2026-05-21 at 18.00.42.jpeg" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Parkiran Kendaraan">
+                            <img src="WhatsApp Image 2026-05-21 at 18.00.42.jpeg" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Parkiran Kendaraan" onerror="this.src='https://placehold.co/400x300/eeeeee/999999?text=Image'">
                             <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                                 <span class="text-white font-bold text-sm text-center px-2">Parkiran Kendaraan</span>
                             </div>
@@ -460,14 +460,9 @@
                     </button>
                 </div>
 
-                <div id="pesanan-ongoing-tab" class="space-y-4">
-                    </div>
-
-                <div id="pesanan-selesai-tab" class="hidden space-y-4">
-                    </div>
-
-                <div id="pesanan-countdown-tab" class="hidden space-y-4">
-                    </div>
+                <div id="pesanan-ongoing-tab" class="space-y-4"></div>
+                <div id="pesanan-selesai-tab" class="hidden space-y-4"></div>
+                <div id="pesanan-countdown-tab" class="hidden space-y-4"></div>
             </div>
         </div>
     </div>
@@ -555,7 +550,7 @@
         <aside class="w-full md:w-64 bg-slate-950 text-white flex-shrink-0 flex flex-col shadow-2xl relative z-20">
             <div class="p-6 border-b border-slate-800/80 flex flex-col items-center justify-center gap-2 bg-slate-900/40">
                 <div class="w-12 h-12 rounded-2xl bg-primary flex items-center justify-center text-white text-xl font-black shadow-lg">RS</div>
-                <h2 class="text-xs font-black tracking-widest text-slate-400 uppercase">Raden Saleh Admin</h2>
+                <h2 class="text-xs font-black tracking-widest text-slate-400 uppercase">Raden Saleh Owner</h2>
             </div>
             
             <nav class="flex-grow p-5 space-y-2">
@@ -579,7 +574,7 @@
             
             <div class="p-5 border-t border-slate-900">
                 <button onclick="togglePortalMode()" class="w-full py-3 bg-rose-600/10 hover:bg-rose-600 text-rose-400 hover:text-white font-bold rounded-xl text-xs transition-all flex items-center justify-center gap-2">
-                    <i class="fa-solid fa-power-off"></i> Logout Admin
+                    <i class="fa-solid fa-power-off"></i> Logout Owner
                 </button>
             </div>
         </aside>
@@ -607,7 +602,7 @@
                             <h3 id="stat-occupancy" class="text-3xl font-black mt-2 text-primary">--%</h3>
                         </div>
                         <div class="bg-white rounded-3xl p-6 shadow-sm border border-slate-100 flex flex-col justify-between">
-                            <p class="text-xs text-slate-400 font-bold uppercase">Total Transaksi</p>
+                            <p class="text-xs text-slate-400 font-bold uppercase">Total Pendapatan</p>
                             <h3 id="stat-revenue" class="text-2xl font-black mt-2 text-slate-800">Rp 0</h3>
                         </div>
                     </div>
@@ -659,7 +654,7 @@
                                     </tr>
                                 </thead>
                                 <tbody id="admin-rooms-table-body" class="divide-y divide-slate-100 font-medium text-slate-700">
-                                    </tbody>
+                                </tbody>
                             </table>
                         </div>
                     </div>
@@ -681,7 +676,7 @@
                                     </tr>
                                 </thead>
                                 <tbody id="admin-tenants-tbody" class="divide-y divide-slate-100">
-                                    </tbody>
+                                </tbody>
                             </table>
                         </div>
                     </div>
@@ -705,7 +700,7 @@
                                     </tr>
                                 </thead>
                                 <tbody id="admin-transactions-tbody" class="divide-y divide-slate-100">
-                                    </tbody>
+                                </tbody>
                             </table>
                         </div>
                     </div>
@@ -736,11 +731,6 @@
                                     <option value="newest">Terbaru</option>
                                     <option value="oldest">Terlama</option>
                                 </select>
-                                <div class="flex items-center gap-2 w-full md:w-auto">
-                                    <input type="date" id="admin-history-start" onchange="updateHistoryFilters()" class="px-3 py-2 bg-slate-50 border border-slate-200 rounded-xl text-xs font-semibold text-slate-600 w-full md:w-auto focus:outline-none focus:ring-2 focus:ring-primary/25">
-                                    <span class="text-xs text-slate-400">-</span>
-                                    <input type="date" id="admin-history-end" onchange="updateHistoryFilters()" class="px-3 py-2 bg-slate-50 border border-slate-200 rounded-xl text-xs font-semibold text-slate-600 w-full md:w-auto focus:outline-none focus:ring-2 focus:ring-primary/25">
-                                </div>
                             </div>
                         </div>
 
@@ -758,11 +748,9 @@
                                     </tr>
                                 </thead>
                                 <tbody id="admin-history-tbody" class="divide-y divide-slate-100">
-                                    </tbody>
+                                </tbody>
                             </table>
                         </div>
-                        
-                        <div id="admin-history-pagination" class="mt-4"></div>
                     </div>
                 </div>
 
@@ -868,10 +856,6 @@
         let historyQuery = '';
         let historyStatusFilter = 'all';
         let historySort = 'newest';
-        let historyStartDate = '';
-        let historyEndDate = '';
-        let historyCurrentPage = 1;
-        const historyItemsPerPage = 5; // Dibatasi 5 per halaman untuk demo
 
         // Inisialisasi default kamar 1-28 jika belum tersimpan di localStorage
         function initRooms() {
@@ -963,9 +947,6 @@
             initApp();
         }
 
-        // ----------------------------------------------------
-        // NOTIFICATION & TOAST & DIALOG
-        // ----------------------------------------------------
         function showNotification(title, desc, type = 'success') {
             const toast = document.getElementById('custom-toast');
             const iconBox = document.getElementById('toast-icon-container');
@@ -1013,9 +994,6 @@
             okBtn.addEventListener('click', handleConfirm);
         }
 
-        // ----------------------------------------------------
-        // CUSTOMER AUTH & LOGOUT
-        // ----------------------------------------------------
         function openCustomerLoginModal() {
             const modal = document.getElementById('customer-login-modal');
             modal.classList.remove('hidden');
@@ -1126,9 +1104,6 @@
             });
         }
 
-        // ----------------------------------------------------
-        // CLIENT MENU PESANAN SAYA
-        // ----------------------------------------------------
         function handlePesananSayaClick(e) {
             if(e) e.preventDefault();
             if (!currentCustomer) {
@@ -1180,7 +1155,6 @@
             renderPesananSayaData();
         }
 
-        // Helper Kalkulasi Periode dan Sisa Waktu Stay
         function calculateRemainingStay(tglMasukStr, durasiBulan) {
             const startDate = new Date(tglMasukStr);
             const endDate = new Date(tglMasukStr);
@@ -1245,15 +1219,13 @@
                 const isActive = isApproved && check.remainingDays > 0;
                 const isExpired = isApproved && check.remainingDays <= 0;
 
-                // Tanggal Booking (Kompabilitas data lama)
                 const tglBookingDisplay = tx.tglBooking || tx.tglMasuk;
 
-                // 1. Panel On Going (Aktif atau Menunggu Verifikasi)
                 if (isActive || isPending) {
                     ongoingCount++;
                     let statusBadge = '';
                     if (isPending) {
-                        statusBadge = `<span class="px-2.5 py-1 bg-amber-550/10 text-amber-500 font-extrabold rounded-lg text-[10px] uppercase border border-amber-500/10"><i class="fa-solid fa-clock-rotate-left mr-1"></i> Menunggu Verifikasi</span>`;
+                        statusBadge = `<span class="px-2.5 py-1 bg-amber-550/10 text-amber-500 font-extrabold rounded-lg text-[10px] uppercase border border-amber-500/10"><i class="fa-solid fa-clock-rotate-left mr-1"></i> Menunggu Verifikasi Owner</span>`;
                     } else {
                         statusBadge = `<span class="px-2.5 py-1 bg-emerald-500/10 text-emerald-600 font-extrabold rounded-lg text-[10px] uppercase border border-emerald-200"><i class="fa-solid fa-circle-check mr-1"></i> Aktif Berjalan</span>`;
                     }
@@ -1269,7 +1241,7 @@
                                     <div><span class="text-slate-400 block text-[10px] uppercase">ID Booking</span>#${tx.id}</div>
                                     <div><span class="text-slate-400 block text-[10px] uppercase">Mulai Masuk</span>${check.startDateStr}</div>
                                     <div><span class="text-slate-400 block text-[10px] uppercase">Durasi Sewa</span>${tx.durasi} Bulan</div>
-                                    <div><span class="text-slate-400 block text-[10px] uppercase">Status Bayar</span><span class="text-emerald-600">${isPending ? 'Verifikasi Admin' : 'Lunas'}</span></div>
+                                    <div><span class="text-slate-400 block text-[10px] uppercase">Status Bayar</span><span class="text-emerald-600">${isPending ? 'Verifikasi Owner' : 'Lunas'}</span></div>
                                 </div>
                             </div>
                             <div class="w-full md:w-auto text-right border-t md:border-t-0 md:border-l border-slate-100 pt-4 md:pt-0 md:pl-6 flex flex-col items-stretch md:items-end justify-center">
@@ -1282,7 +1254,6 @@
                         </div>
                     `;
 
-                    // 3. Panel Sisa Waktu Stay (Hanya yang Aktif & Disetujui)
                     if (isActive) {
                         countdownTab.innerHTML += `
                             <div class="bg-white p-6 rounded-3xl border border-slate-100 shadow-sm space-y-4 fade-in">
@@ -1306,7 +1277,6 @@
                     }
                 }
 
-                // 2. Panel Selesai (Kadaluarsa atau Ditolak)
                 if (isExpired || isRejected) {
                     let archiveBadge = '';
                     if (isRejected) {
@@ -1337,15 +1307,11 @@
 
             document.getElementById('badge-ongoing').innerText = ongoingCount;
 
-            // Penanganan Empty State Per Tab secara individual
             if(ongoingTab.innerHTML === '') ongoingTab.innerHTML = `<div class="text-center p-8 text-slate-400 font-semibold text-xs bg-white rounded-2xl border">Tidak ada pesanan aktif/dalam proses saat ini.</div>`;
             if(selesaiTab.innerHTML === '') selesaiTab.innerHTML = `<div class="text-center p-8 text-slate-400 font-semibold text-xs bg-white rounded-2xl border">Belum ada riwayat pesanan selesai.</div>`;
             if(countdownTab.innerHTML === '') countdownTab.innerHTML = `<div class="text-center p-8 text-slate-400 font-semibold text-xs bg-white rounded-2xl border">Indikator countdown hanya tersedia untuk masa tinggal sewa kamar yang sedang aktif berjalan.</div>`;
         }
 
-        // ----------------------------------------------------
-        // CLIENT KATALOG & FORMULIR BOOKING
-        // ----------------------------------------------------
         function filterCatalog(layer) {
             currentFilter = layer;
             showAllRooms = false;
@@ -1393,6 +1359,7 @@
                         <h4 class="text-2xl font-black text-slate-800 tracking-tight mb-1">Kamar ${room.nama}</h4>
                         <p class="text-slate-400 text-xs font-medium mb-4">Suite Eksklusif Premium</p>
                         <div class="space-y-2 mb-6 text-[11px] font-semibold text-slate-500">
+                            <div class="flex items-center gap-2"><i class="fa-solid fa-vector-square text-slate-400 w-4"></i> Luas Kamar 4x5 Meter</div>
                             <div class="flex items-center gap-2"><i class="fa-solid fa-snowflake text-slate-400 w-4"></i> Pendingin Ruangan AC</div>
                             <div class="flex items-center gap-2"><i class="fa-solid fa-bath text-slate-400 w-4"></i> KM Dalam & Water Heater</div>
                             <div class="flex items-center gap-2"><i class="fa-solid fa-bed text-slate-400 w-4"></i> Kasur Springbed King</div>
@@ -1505,7 +1472,7 @@
                 kamar: room.nama,
                 nama: currentCustomer.nama,
                 wa: currentCustomer.wa,
-                tglBooking: new Date().toISOString().split('T')[0], // MENYIMPAN TANGGAL TRANSAKSI DIBUAT
+                tglBooking: new Date().toISOString().split('T')[0], 
                 tglMasuk: start,
                 durasi: dur,
                 total: parseInt(dur) * (room.harga || 2000000),
@@ -1517,13 +1484,10 @@
             saveStateToStorage();
             closeBookingModal();
             refreshAdminUI();
-            showNotification('Booking Terkirim!', 'Bukti pembayaran Anda sedang dalam proses verifikasi admin.', 'success');
+            showNotification('Booking Terkirim!', 'Bukti pembayaran Anda sedang dalam proses verifikasi Owner.', 'success');
             openPesananSaya();
         }
 
-        // ----------------------------------------------------
-        // ADMIN DASHBOARD LOGIN & PORTAL CONTROLLER
-        // ----------------------------------------------------
         function requestAdminAccess() {
             document.getElementById('admin-login-modal').classList.remove('hidden');
         }
@@ -1537,14 +1501,17 @@
             const user = document.getElementById('admin-user').value;
             const pass = document.getElementById('admin-pass').value;
 
-            if(user === 'admin' && pass === 'admin123') {
+            // Updated credentials for Owner
+            if(user === 'owner' && pass === 'owner123') {
                 closeAdminLogin();
                 togglePortalMode();
-                showNotification('Sukses Login Admin', 'Selamat datang Raden Saleh Admin.', 'success');
+                showNotification('Sukses Login Owner', 'Selamat datang Raden Saleh Owner.', 'success');
             } else {
-                showNotification('Akses Ditolak', 'Password atau Username Admin salah.', 'error');
+                showNotification('Akses Ditolak', 'Password atau Username Owner salah.', 'error');
             }
         }
+
+        let isAdminMode = false;
 
         function togglePortalMode() {
             isAdminMode = !isAdminMode;
@@ -1559,8 +1526,6 @@
                 renderCatalog();
             }
         }
-
-        let isAdminMode = false;
 
         function switchAdminTab(tab) {
             activeAdminTab = tab;
@@ -1586,9 +1551,6 @@
             document.getElementById('current-tab-title').innerText = titles[tab];
         }
 
-        // ----------------------------------------------------
-        // ADMIN CRUD KAMAR CONTROLLER
-        // ----------------------------------------------------
         let roomQuery = '';
         let roomFloorFilter = 'all';
         let roomStatusFilter = 'all';
@@ -1621,13 +1583,12 @@
             }
 
             filtered.forEach((r) => {
-                // Cari index asli kamar untuk aksi CRUD
                 const origIndex = rooms.findIndex(orig => orig.id === r.id);
                 
                 tbody.innerHTML += `
                     <tr class="hover:bg-slate-50 transition-all">
                         <td class="p-4 pl-6">
-                            <img src="${r.foto || 'https://placehold.co/80x60'}" class="w-12 h-10 object-cover rounded-xl shadow-sm border" onerror="this.src='https://placehold.co/80x60'">
+                            <img src="${r.foto || 'https://placehold.co/80x60'}" class="w-12 h-10 object-cover rounded-xl shadow-sm border" onerror="this.src='https://placehold.co/80x60/eeeeee/999999?text=Kos'">
                         </td>
                         <td class="p-4 font-bold text-slate-800">Kamar ${r.nama}</td>
                         <td class="p-4 text-slate-505 font-semibold">${r.lantai === 'lantai1' ? 'Lantai 1 (A)' : 'Lantai 2 (B)'}</td>
@@ -1638,7 +1599,7 @@
                             </span>
                         </td>
                         <td class="p-4 text-slate-500 font-semibold">${r.penghuni}</td>
-                        <td class="p-4 pr-6 text-right space-x-1">
+                        <td class="p-4 pr-6 text-right space-x-1 whitespace-nowrap">
                             <button onclick="openRoomCrudModal(${origIndex})" class="w-8 h-8 rounded-lg bg-blue-50 text-blue-600 hover:bg-blue-600 hover:text-white transition-all"><i class="fa-solid fa-pen text-xs"></i></button>
                             <button onclick="deleteRoom(${origIndex})" class="w-8 h-8 rounded-lg bg-rose-50 text-rose-600 hover:bg-rose-600 hover:text-white transition-all"><i class="fa-solid fa-trash text-xs"></i></button>
                         </td>
@@ -1691,7 +1652,6 @@
             const foto = document.getElementById('crud-room-photo').value.trim();
 
             if (idx >= 0) {
-                // Mode Edit
                 rooms[idx].nama = nama;
                 rooms[idx].lantai = lantai;
                 rooms[idx].harga = harga;
@@ -1701,7 +1661,6 @@
                 if(status === 'Tersedia') rooms[idx].penghuni = '-';
                 showNotification('Sukses', 'Data kamar berhasil diperbarui.', 'success');
             } else {
-                // Mode Tambah Baru
                 const newRoom = {
                     id: `RM-${Date.now()}`,
                     nama: nama,
@@ -1718,7 +1677,7 @@
 
             saveStateToStorage();
             renderAdminRoomsTable();
-            refreshAdminUI(); // Update dashboard overview
+            refreshAdminUI(); 
             closeRoomCrudModal();
         }
 
@@ -1737,13 +1696,12 @@
             });
         }
 
-
-        // ----------------------------------------------------
-        // ADMIN DASHBOARD OVERVIEW & OTHER TABS
-        // ----------------------------------------------------
         function refreshAdminUI() {
             if(!isAdminMode) return;
             renderAdminRoomsTable();
+            renderAdminTenantsTable();
+            renderAdminTransactionsTable();
+            renderHistoryTable();
 
             // Stats Update
             const filled = rooms.filter(r => r.status === 'Terisi').length;
@@ -1755,7 +1713,10 @@
             document.getElementById('stat-available').innerText = `${avail} / ${total}`;
             document.getElementById('stat-occupancy').innerText = `${occ}%`;
             
-            const revenue = tenants.reduce((acc, curr) => acc + (curr.total || 0), 0);
+            // Calculate total revenue only from approved transactions
+            const revenue = transactions
+                            .filter(t => t.status === 'Disetujui')
+                            .reduce((acc, curr) => acc + (curr.total || 0), 0);
             document.getElementById('stat-revenue').innerText = `Rp ${revenue.toLocaleString('id-ID')}`;
 
             // Recent Logs
@@ -1763,275 +1724,172 @@
             const recentTx = [...transactions].slice(0, 5);
             logsBox.innerHTML = recentTx.length ? recentTx.map(t => `
                 <div class="flex items-start gap-3 p-3 bg-slate-50 rounded-xl border border-slate-100">
-                    <div class="w-8 h-8 rounded-full bg-primary/10 text-primary flex items-center justify-center flex-shrink-0 mt-0.5"><i class="fa-solid fa-bell text-xs"></i></div>
+                    <div class="w-8 h-8 rounded-full bg-primary/10 text-primary flex items-center justify-center text-xs font-bold shrink-0">
+                        <i class="fa-solid fa-receipt"></i>
+                    </div>
                     <div>
-                        <p class="text-xs text-slate-700 font-semibold"><span class="font-extrabold text-slate-900">${t.nama}</span> melakukan booking <span class="font-bold">Kamar ${t.kamar}</span></p>
-                        <p class="text-[10px] text-slate-400 mt-1">Status: ${t.status} • Total: Rp ${t.total.toLocaleString('id-ID')}</p>
+                        <p class="text-xs font-bold text-slate-700">${t.nama} booking ${t.kamar}</p>
+                        <p class="text-[10px] text-slate-400">${t.status}</p>
                     </div>
                 </div>
-            `).join('') : '<p class="text-xs text-slate-400 font-semibold italic">Belum ada aktivitas transaksi terekam.</p>';
+            `).join('') : '<p class="text-xs text-slate-400">Belum ada aktivitas terbaru.</p>';
+        }
 
-            // Tenants Table
-            const tBody = document.getElementById('admin-tenants-tbody');
-            tBody.innerHTML = tenants.length ? tenants.map(t => `
+        function renderAdminTenantsTable() {
+            const tbody = document.getElementById('admin-tenants-tbody');
+            if(!tbody) return;
+            const activeTenants = transactions.filter(t => t.status === 'Disetujui');
+            tbody.innerHTML = activeTenants.length ? activeTenants.map(t => `
                 <tr class="hover:bg-slate-50 transition-all">
-                    <td class="p-4 pl-6 font-bold text-slate-500 text-[10px]">#${t.id.slice(-6)}</td>
+                    <td class="p-4 pl-6 text-slate-500 font-bold text-[11px]">#${t.id}</td>
                     <td class="p-4 font-bold text-slate-800">${t.nama}</td>
-                    <td class="p-4 font-semibold text-slate-500">${t.wa}</td>
-                    <td class="p-4 font-black text-primary">Kamar ${t.kamar}</td>
-                    <td class="p-4 font-semibold text-slate-500">${t.tglMasuk}</td>
+                    <td class="p-4 text-slate-500 text-xs">${t.wa}</td>
+                    <td class="p-4 font-black text-primary">${t.kamar}</td>
+                    <td class="p-4 text-slate-500 text-xs">${t.tglMasuk}</td>
                     <td class="p-4 pr-6 text-right">
-                        <button onclick="terminateTenant('${t.id}')" class="px-3 py-1.5 bg-rose-50 text-rose-600 hover:bg-rose-600 hover:text-white rounded-lg text-[10px] font-bold transition-all border border-rose-200">Akhiri Sewa</button>
+                        <button onclick="terminateTenant('${t.id}')" class="px-3 py-1.5 bg-rose-50 text-rose-600 rounded-lg text-[10px] font-bold hover:bg-rose-600 hover:text-white transition-all shadow-sm">Akhiri Sewa</button>
                     </td>
                 </tr>
-            `).join('') : '<tr><td colspan="6" class="p-8 text-center text-slate-400 font-semibold">Belum ada penghuni aktif.</td></tr>';
+            `).join('') : `<tr><td colspan="6" class="p-8 text-center text-slate-400 text-xs font-semibold">Belum ada penghuni aktif.</td></tr>`;
+        }
 
-            // Transactions Verification Table
-            const txBody = document.getElementById('admin-transactions-tbody');
-            const pendingTx = transactions.filter(t => t.status === 'Menunggu Verifikasi');
-            
+        function renderAdminTransactionsTable() {
+            const tbody = document.getElementById('admin-transactions-tbody');
             const badge = document.getElementById('badge-pembayaran-admin');
-            badge.innerText = pendingTx.length;
-            badge.classList.toggle('hidden', pendingTx.length === 0);
-
-            txBody.innerHTML = pendingTx.length ? pendingTx.map(t => `
+            if(!tbody) return;
+            const pendingTx = transactions.filter(t => t.status === 'Menunggu Verifikasi');
+            if(badge) badge.innerText = pendingTx.length;
+            
+            tbody.innerHTML = pendingTx.length ? pendingTx.map((t, index) => `
                 <tr class="hover:bg-slate-50 transition-all">
-                    <td class="p-4 pl-6 font-bold text-slate-500 text-[10px]">#${t.id}</td>
-                    <td class="p-4 font-bold text-slate-800">${t.nama}<br><span class="text-[10px] font-semibold text-slate-400">${t.wa}</span></td>
+                    <td class="p-4 pl-6 text-slate-500 font-bold text-[11px]">#${t.id}</td>
+                    <td class="p-4 font-bold text-slate-800">${t.nama}</td>
                     <td class="p-4 font-black text-slate-700">${t.kamar}</td>
-                    <td class="p-4 font-semibold text-slate-500">${t.durasi} Bulan<br><span class="text-[9px] text-slate-400">In: ${t.tglMasuk}</span></td>
-                    <td class="p-4 font-black text-emerald-600">Rp ${t.total.toLocaleString('id-ID')}</td>
+                    <td class="p-4 text-slate-500 text-xs">${t.durasi} Bln</td>
+                    <td class="p-4 font-bold text-slate-800">Rp ${t.total.toLocaleString('id-ID')}</td>
                     <td class="p-4">
-                        <button onclick="viewSlip('${t.slip}')" class="text-[10px] font-bold px-3 py-1.5 bg-blue-50 text-blue-600 rounded-lg hover:bg-blue-100 transition-all"><i class="fa-solid fa-image mr-1"></i> Cek Slip</button>
+                        <button onclick="viewSlip('${t.slip}')" class="px-3 py-1.5 bg-blue-50 text-blue-600 rounded-lg text-[10px] font-bold hover:bg-blue-600 hover:text-white transition-all shadow-sm">Lihat Slip</button>
                     </td>
-                    <td class="p-4"><span class="px-2.5 py-1 bg-amber-500/10 text-amber-600 font-bold rounded-lg text-[10px] uppercase border border-amber-200">${t.status}</span></td>
-                    <td class="p-4 pr-6 text-right space-x-2">
-                        <button onclick="approveTx('${t.id}')" class="w-8 h-8 rounded-lg bg-emerald-50 text-emerald-600 hover:bg-emerald-600 hover:text-white transition-all shadow-sm"><i class="fa-solid fa-check"></i></button>
-                        <button onclick="rejectTx('${t.id}')" class="w-8 h-8 rounded-lg bg-rose-50 text-rose-600 hover:bg-rose-600 hover:text-white transition-all shadow-sm"><i class="fa-solid fa-xmark"></i></button>
+                    <td class="p-4">
+                        <span class="px-2.5 py-1 bg-amber-500/10 text-amber-500 font-bold rounded-lg text-[10px] uppercase border border-amber-200">Pending</span>
+                    </td>
+                    <td class="p-4 pr-6 text-right space-x-1 whitespace-nowrap">
+                        <button onclick="approveTransaction('${t.id}')" class="w-8 h-8 rounded-lg bg-emerald-50 text-emerald-600 hover:bg-emerald-600 hover:text-white transition-all shadow-sm" title="Setujui"><i class="fa-solid fa-check"></i></button>
+                        <button onclick="rejectTransaction('${t.id}')" class="w-8 h-8 rounded-lg bg-rose-50 text-rose-600 hover:bg-rose-600 hover:text-white transition-all shadow-sm" title="Tolak"><i class="fa-solid fa-xmark"></i></button>
                     </td>
                 </tr>
-            `).join('') : '<tr><td colspan="8" class="p-8 text-center text-slate-400 font-semibold">Tidak ada transaksi yang menunggu verifikasi.</td></tr>';
-            
-            renderHistoryTable(); // Update tabel history jika tab history aktif
-        }
-
-        // Action Handlers Admin
-        function approveTx(id) {
-            showCustomConfirm('Setujui transaksi dan masukkan sebagai penghuni?', () => {
-                const tx = transactions.find(t => t.id === id);
-                if(!tx) return;
-                
-                const roomIndex = rooms.findIndex(r => r.nama === tx.kamar);
-                if (roomIndex !== -1) {
-                    rooms[roomIndex].status = 'Terisi';
-                    rooms[roomIndex].penghuni = tx.nama;
-                }
-
-                tenants.push({ id: tx.id, nama: tx.nama, wa: tx.wa, kamar: tx.kamar, tglMasuk: tx.tglMasuk, total: tx.total, durasi: tx.durasi });
-                tx.status = 'Disetujui';
-                
-                saveStateToStorage();
-                refreshAdminUI();
-                showNotification('Disetujui', `Booking kamar ${tx.kamar} berhasil dikonfirmasi.`, 'success');
-            });
-        }
-
-        function rejectTx(id) {
-            showCustomConfirm('Tolak transaksi ini? Bukti pembayaran dianggap tidak valid.', () => {
-                const tx = transactions.find(t => t.id === id);
-                if(tx) tx.status = 'Ditolak';
-                saveStateToStorage();
-                refreshAdminUI();
-                showNotification('Ditolak', `Transaksi #${id} telah ditolak.`, 'error');
-            });
-        }
-
-        function terminateTenant(id) {
-            showCustomConfirm('Akhiri masa sewa penghuni ini? Kamar akan kembali tersedia.', () => {
-                const tenantIdx = tenants.findIndex(t => t.id === id);
-                if(tenantIdx > -1) {
-                    const t = tenants[tenantIdx];
-                    const roomIndex = rooms.findIndex(r => r.nama === t.kamar);
-                    if (roomIndex !== -1) {
-                        rooms[roomIndex].status = 'Tersedia';
-                        rooms[roomIndex].penghuni = '-';
-                    }
-                    tenants.splice(tenantIdx, 1);
-                    saveStateToStorage();
-                    refreshAdminUI();
-                    showNotification('Sukses', `Sewa atas nama ${t.nama} telah diakhiri.`, 'success');
-                }
-            });
-        }
-
-        // Slip Viewer Modal
-        function viewSlip(url) {
-            document.getElementById('slip-image').src = url;
-            const modal = document.getElementById('modal-slip');
-            modal.classList.remove('hidden');
-            modal.classList.add('flex');
-            document.body.style.overflow = 'hidden';
-        }
-
-        function closeSlipModal() {
-            const modal = document.getElementById('modal-slip');
-            modal.classList.add('hidden');
-            modal.classList.remove('flex');
-            document.body.style.overflow = '';
-        }
-
-        // ----------------------------------------------------
-        // ADMIN HISTORY TRANSAKSI CONTROLLER
-        // ----------------------------------------------------
-        function updateHistoryFilters() {
-            historyQuery = document.getElementById('admin-history-search').value.toLowerCase();
-            historyStatusFilter = document.getElementById('admin-history-status').value;
-            historySort = document.getElementById('admin-history-sort').value;
-            historyStartDate = document.getElementById('admin-history-start').value;
-            historyEndDate = document.getElementById('admin-history-end').value;
-            historyCurrentPage = 1; // Reset ke halaman pertama setiap filter berubah
-            renderHistoryTable();
+            `).join('') : `<tr><td colspan="8" class="p-8 text-center text-slate-400 text-xs font-semibold">Tidak ada transaksi yang perlu diverifikasi.</td></tr>`;
         }
 
         function renderHistoryTable() {
             const tbody = document.getElementById('admin-history-tbody');
-            const paginator = document.getElementById('admin-history-pagination');
+            if(!tbody) return;
             
-            // 1. Filtering
-            let filteredTx = transactions.filter(t => {
-                const searchMatch = t.nama.toLowerCase().includes(historyQuery) || t.kamar.toLowerCase().includes(historyQuery) || t.id.toLowerCase().includes(historyQuery);
-                const statusMatch = historyStatusFilter === 'all' || t.status === historyStatusFilter;
-                
-                let dateMatch = true;
-                const txDate = t.tglBooking || t.tglMasuk; // Fallback jika transaksi lama tidak punya tglBooking
-                
-                if (historyStartDate && txDate < historyStartDate) dateMatch = false;
-                if (historyEndDate && txDate > historyEndDate) dateMatch = false;
-
-                return searchMatch && statusMatch && dateMatch;
+            let filtered = transactions.filter(t => {
+                const matchQuery = t.nama.toLowerCase().includes(historyQuery) || t.kamar.toLowerCase().includes(historyQuery);
+                const matchStatus = historyStatusFilter === 'all' || t.status === historyStatusFilter;
+                return matchQuery && matchStatus;
             });
-
-            // 2. Sorting
-            filteredTx.sort((a, b) => {
-                const dateA = new Date(a.tglBooking || a.tglMasuk);
-                const dateB = new Date(b.tglBooking || b.tglMasuk);
-                if (historySort === 'newest') {
-                    return dateB - dateA;
-                } else {
-                    return dateA - dateB;
-                }
-            });
-
-            // 3. Pagination Logic
-            const totalItems = filteredTx.length;
-            const totalPages = Math.ceil(totalItems / historyItemsPerPage);
             
-            // Ensure current page is valid
-            if (historyCurrentPage > totalPages) historyCurrentPage = Math.max(1, totalPages);
-            
-            const startIndex = (historyCurrentPage - 1) * historyItemsPerPage;
-            const paginatedTx = filteredTx.slice(startIndex, startIndex + historyItemsPerPage);
-
-            // 4. Render Table Rows
-            if (paginatedTx.length === 0) {
-                tbody.innerHTML = `<tr><td colspan="7" class="p-8 text-center text-slate-400 font-semibold bg-white">Tidak ada riwayat transaksi yang sesuai dengan filter.</td></tr>`;
-                paginator.innerHTML = '';
-                return;
+            if (historySort === 'oldest') {
+                filtered.sort((a,b) => a.id.localeCompare(b.id));
+            } else {
+                filtered.sort((a,b) => b.id.localeCompare(a.id));
             }
 
-            tbody.innerHTML = paginatedTx.map(t => {
-                let statusClass = '';
-                let statusIcon = '';
-                if (t.status === 'Disetujui') {
-                    statusClass = 'bg-emerald-500/10 text-emerald-600 border-emerald-200';
-                    statusIcon = '<i class="fa-solid fa-check mr-1"></i>';
-                } else if (t.status === 'Ditolak') {
-                    statusClass = 'bg-rose-500/10 text-rose-600 border-rose-200';
-                    statusIcon = '<i class="fa-solid fa-xmark mr-1"></i>';
-                } else {
-                    statusClass = 'bg-amber-500/10 text-amber-600 border-amber-200';
-                    statusIcon = '<i class="fa-solid fa-clock mr-1"></i>';
-                }
+            tbody.innerHTML = filtered.length ? filtered.map(t => {
+                let badge = '';
+                if(t.status === 'Disetujui') badge = '<span class="px-2.5 py-1 bg-emerald-500/10 text-emerald-600 font-bold rounded-lg text-[10px] uppercase border border-emerald-200">Selesai</span>';
+                else if(t.status === 'Ditolak') badge = '<span class="px-2.5 py-1 bg-rose-500/10 text-rose-600 font-bold rounded-lg text-[10px] uppercase border border-rose-200">Ditolak</span>';
+                else badge = '<span class="px-2.5 py-1 bg-amber-500/10 text-amber-500 font-bold rounded-lg text-[10px] uppercase border border-amber-200">Pending</span>';
 
                 return `
-                <tr class="hover:bg-slate-50 transition-all bg-white border-b border-slate-50 last:border-0">
-                    <td class="p-4 pl-6">
-                        <div class="font-bold text-slate-700">#${t.id}</div>
-                        <div class="text-[10px] text-slate-400 font-medium mt-0.5">${t.tglBooking || t.tglMasuk}</div>
-                    </td>
-                    <td class="p-4">
-                        <div class="font-bold text-slate-800">${t.nama}</div>
-                        <div class="text-[10px] text-slate-500 font-semibold mt-0.5"><i class="fa-brands fa-whatsapp text-emerald-500"></i> ${t.wa}</div>
-                    </td>
-                    <td class="p-4 font-black text-slate-700">Kamar ${t.kamar}</td>
-                    <td class="p-4">
-                        <div class="font-semibold text-slate-600 text-xs">In: ${t.tglMasuk}</div>
-                        <div class="text-[10px] text-slate-400 font-medium mt-0.5">${t.durasi} Bulan Sewa</div>
-                    </td>
-                    <td class="p-4 font-black text-slate-800">Rp ${t.total.toLocaleString('id-ID')}</td>
-                    <td class="p-4">
-                        <span class="px-2.5 py-1 ${statusClass} font-bold rounded-lg text-[10px] uppercase border whitespace-nowrap inline-flex items-center">
-                            ${statusIcon} ${t.status}
-                        </span>
-                    </td>
+                <tr class="hover:bg-slate-50 transition-all">
+                    <td class="p-4 pl-6 text-slate-500 text-[10px]"><b>#${t.id}</b><br>${t.tglBooking || t.tglMasuk}</td>
+                    <td class="p-4 font-bold text-slate-800">${t.nama}</td>
+                    <td class="p-4 font-black text-slate-700">${t.kamar}</td>
+                    <td class="p-4 text-slate-500 text-[11px]">${t.tglMasuk} <br> (${t.durasi} Bulan)</td>
+                    <td class="p-4 font-bold text-slate-800">Rp ${t.total.toLocaleString('id-ID')}</td>
+                    <td class="p-4">${badge}</td>
                     <td class="p-4 pr-6 text-right">
-                        <button onclick="viewSlip('${t.slip}')" class="w-8 h-8 rounded-lg bg-blue-50 text-blue-600 hover:bg-blue-600 hover:text-white transition-all shadow-sm inline-flex items-center justify-center" title="Lihat Bukti Transfer">
-                            <i class="fa-solid fa-image text-xs"></i>
-                        </button>
+                        <button onclick="deleteHistory('${t.id}')" class="w-8 h-8 rounded-lg bg-rose-50 text-rose-600 hover:bg-rose-600 hover:text-white transition-all"><i class="fa-solid fa-trash text-xs"></i></button>
                     </td>
                 </tr>
-            `}).join('');
-
-            // 5. Render Pagination Controls
-            if (totalPages > 1) {
-                let paginationHTML = `<div class="flex items-center justify-between px-4 py-3 bg-white border-t border-slate-100 sm:px-6 rounded-b-xl">
-                    <div class="hidden sm:flex-1 sm:flex sm:items-center sm:justify-between">
-                        <div>
-                            <p class="text-xs text-slate-500">
-                                Menampilkan <span class="font-bold">${startIndex + 1}</span> sampai <span class="font-bold">${Math.min(startIndex + historyItemsPerPage, totalItems)}</span> dari <span class="font-bold">${totalItems}</span> entri
-                            </p>
-                        </div>
-                        <div>
-                            <nav class="relative z-0 inline-flex rounded-md shadow-sm -space-x-px" aria-label="Pagination">
-                `;
-                
-                // Prev Button
-                paginationHTML += `
-                    <button onclick="changeHistoryPage(${historyCurrentPage - 1})" ${historyCurrentPage === 1 ? 'disabled' : ''} class="relative inline-flex items-center px-2 py-2 rounded-l-md border border-slate-200 bg-white text-sm font-medium ${historyCurrentPage === 1 ? 'text-slate-300 cursor-not-allowed' : 'text-slate-500 hover:bg-slate-50'}">
-                        <span class="sr-only">Previous</span>
-                        <i class="fa-solid fa-chevron-left text-[10px]"></i>
-                    </button>
-                `;
-
-                // Page Numbers
-                for (let i = 1; i <= totalPages; i++) {
-                    if (i === historyCurrentPage) {
-                        paginationHTML += `<button aria-current="page" class="z-10 bg-primary/10 border-primary text-primary relative inline-flex items-center px-4 py-2 border text-xs font-bold">${i}</button>`;
-                    } else {
-                        paginationHTML += `<button onclick="changeHistoryPage(${i})" class="bg-white border-slate-200 text-slate-500 hover:bg-slate-50 relative inline-flex items-center px-4 py-2 border text-xs font-bold">${i}</button>`;
-                    }
-                }
-
-                // Next Button
-                paginationHTML += `
-                    <button onclick="changeHistoryPage(${historyCurrentPage + 1})" ${historyCurrentPage === totalPages ? 'disabled' : ''} class="relative inline-flex items-center px-2 py-2 rounded-r-md border border-slate-200 bg-white text-sm font-medium ${historyCurrentPage === totalPages ? 'text-slate-300 cursor-not-allowed' : 'text-slate-500 hover:bg-slate-50'}">
-                        <span class="sr-only">Next</span>
-                        <i class="fa-solid fa-chevron-right text-[10px]"></i>
-                    </button>
-                `;
-
-                paginationHTML += `</nav></div></div></div>`;
-                paginator.innerHTML = paginationHTML;
-            } else {
-                paginator.innerHTML = ''; // No pagination needed
-            }
+            `}).join('') : `<tr><td colspan="7" class="p-8 text-center text-slate-400 text-xs font-semibold">Tidak ada history transaksi.</td></tr>`;
         }
 
-        function changeHistoryPage(page) {
-            historyCurrentPage = page;
+        function updateHistoryFilters() {
+            historyQuery = document.getElementById('admin-history-search').value.toLowerCase();
+            historyStatusFilter = document.getElementById('admin-history-status').value;
+            historySort = document.getElementById('admin-history-sort').value;
             renderHistoryTable();
         }
 
+        function approveTransaction(id) {
+            showCustomConfirm('Setujui transaksi ini dan konfirmasi pembayaran?', () => {
+                const tx = transactions.find(t => t.id === id);
+                if(tx) {
+                    tx.status = 'Disetujui';
+                    const room = rooms.find(r => r.nama === tx.kamar);
+                    if(room) {
+                        room.status = 'Terisi';
+                        room.penghuni = tx.nama;
+                    }
+                    saveStateToStorage();
+                    refreshAdminUI();
+                    showNotification('Pembayaran Disetujui', 'Transaksi disetujui, kamar ditandai terisi.', 'success');
+                }
+            });
+        }
+
+        function rejectTransaction(id) {
+             showCustomConfirm('Tolak transaksi ini?', () => {
+                const tx = transactions.find(t => t.id === id);
+                if(tx) {
+                    tx.status = 'Ditolak';
+                    saveStateToStorage();
+                    refreshAdminUI();
+                    showNotification('Ditolak', 'Transaksi telah ditolak.', 'success');
+                }
+            });
+        }
+        
+        function terminateTenant(id) {
+            showCustomConfirm('Akhiri masa sewa penghuni ini secara paksa?', () => {
+                const tx = transactions.find(t => t.id === id);
+                if(tx) {
+                    tx.status = 'Selesai';
+                    const room = rooms.find(r => r.nama === tx.kamar);
+                    if(room) {
+                        room.status = 'Tersedia';
+                        room.penghuni = '-';
+                    }
+                    saveStateToStorage();
+                    refreshAdminUI();
+                    showNotification('Selesai', 'Masa sewa diakhiri, kamar kini tersedia kembali.', 'success');
+                }
+            });
+        }
+
+        function deleteHistory(id) {
+            showCustomConfirm('Hapus riwayat ini secara permanen dari sistem?', () => {
+                transactions = transactions.filter(t => t.id !== id);
+                saveStateToStorage();
+                refreshAdminUI();
+            });
+        }
+
+        function viewSlip(url) {
+            document.getElementById('slip-image').src = url;
+            document.getElementById('modal-slip').classList.remove('hidden');
+            document.getElementById('modal-slip').classList.add('flex');
+        }
+
+        function closeSlipModal() {
+            document.getElementById('modal-slip').classList.add('hidden');
+            document.getElementById('modal-slip').classList.remove('flex');
+            document.getElementById('slip-image').src = '';
+        }
     </script>
 </body>
 </html>
